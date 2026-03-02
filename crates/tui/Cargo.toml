@@ -1,0 +1,14 @@
+[package]
+name = "godot-updater"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "godot-updater"
+path = "src/main.rs"
+
+[dependencies]
+godot-updater-core = { path = "../core" }
+ratatui = "0.29"
+crossterm = "0.28"
+tokio = { version = "1", features = ["full"] }
